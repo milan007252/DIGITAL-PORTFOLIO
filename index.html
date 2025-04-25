@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milan Pandita - Chemical Engineer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    .top-name {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: #1e40af;
+      color: white;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #2563eb;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e40af;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    input[type="file"] {
+      margin-top: 1rem;
+    }
+    img {
+      margin-top: 1rem;
+      border-radius: 1rem;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    function displayPhoto(event) {
+      const output = document.getElementById('photoPreview');
+      output.src = URL.createObjectURL(event.target.files[0]);
+      output.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="top-name">Milan Pandita</div>
+  <header>
+    <p>Chemical Engineer Portfolio - MIT Academy of Engineering, Pune</p>
+  </header>
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#skills">Skills</a>
+    <a href="#networking">Networking</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#contracts">Contracts</a>
+  </nav>  <section id="introduction">
+    <h2>About Me</h2>
+    <p>Hi, I am <strong>Milan Pandita</strong>, an aspiring Chemical Engineer from MIT Academy of Engineering, Pune. With a strong foundation in process engineering, analytical chemistry, and sustainable practices, I aim to contribute to cutting-edge solutions in the chemical industry.</p>
+    <label for="photoUpload">Upload Your Photo:</label><br>
+    <input type="file" id="photoUpload" accept="image/*" onchange="displayPhoto(event)">
+    <br>
+    <img id="photoPreview" style="display:none" alt="Profile Preview">
+  </section>  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Process Simulation (Aspen Plus, ChemCAD)</li>
+      <li>Analytical Techniques (GC-MS, HPLC, Titration)</li>
+      <li>Safety and Hazard Analysis (HAZOP, MSDS)</li>
+      <li>Material and Energy Balances</li>
+      <li>3D Modeling (AutoCAD, SolidWorks)</li>
+      <li>Environmental Sustainability in Chemical Design</li>
+    </ul>
+  </section>  <section id="networking">
+    <h2>Networking</h2>
+    <p>Active member of:</p>
+    <ul>
+      <li>Indian Institute of Chemical Engineers (IIChE)</li>
+      <li>AIChE Student Chapter</li>
+      <li>LinkedIn Professional Groups in Process Engineering</li>
+    </ul>
+    <p>Regularly attends seminars, conferences, and webinars related to process safety and green engineering.</p>
+  </section>  <section id="marketing">
+    <h2>Marketing</h2>
+    <p>Experienced in presenting technical topics to both technical and non-technical audiences. Skilled in creating marketing content for chemical products, including brochures, infographics, and digital posts for academic and startup projects.</p>
+  </section>  <section id="contracts">
+    <h2>Contracts</h2>
+    <p>Basic knowledge of legal and industrial contracts in chemical engineering projects. Familiar with NDAs, licensing agreements, and vendor-client service contracts used in R&D and manufacturing collaborations.</p>
+  </section>
+</body>
+</html>
